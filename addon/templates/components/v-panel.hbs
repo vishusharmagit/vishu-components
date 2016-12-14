@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+  <div class="panel-heading {{headerCls}}" >
+    <h4 class="panel-title {{titleCls}}">
+        {{#if titleUrl}}
+            {{#link-to titleUrl}}{{title}}{{/link-to}}
+        {{else}}
+            {{title}}
+        {{/if}}
+        {{#if isCollapsible}}
+            <span class="pull-right clickable"><i class="glyphicon {{if isCollapsed 'glyphicon-chevron-down' 'glyphicon-chevron-up'}}" {{action "click"}}></i></span>
+        {{/if}}
+    </h4>
+        
+  </div>
+  <div class="v-panel-body {{if collapsed 'v-panel-collapsed'}}">
+      {{yield}}
+  </div>
+</div>
+
+
+
+
+

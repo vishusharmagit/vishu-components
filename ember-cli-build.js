@@ -14,5 +14,11 @@ module.exports = function(defaults) {
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
 
+  app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.css');
+  app.import(app.bowerDirectory + '/bootstrap/dist/js/bootstrap.js');
+  app.import(app.bowerDirectory + '/bootstrap/dist/fonts/glyphicons-halflings-regular.woff', {
+    destDir: 'fonts'
+  });
+
   return app.toTree();
 };
