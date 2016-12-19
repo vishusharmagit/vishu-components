@@ -2,7 +2,8 @@
 	<span class="image"><img src={{profileImageUrl}} alt="Profile Image" /></span>
 	<span>
 	  <span>{{userName}}</span>
-	  <span class="time">{{messageTime}}</span>
+	  {{!-- <span class="time">{{moment-format messageTime}}</span> --}}
+	  <span class="time">{{moment-from-now messageTime}}</span>
 	</span>
 	<span class="message">
 	  {{messageContent}}

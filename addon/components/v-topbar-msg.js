@@ -5,13 +5,13 @@ export default Ember.Component.extend({
   tagName : '',
   layout : layout,
   data : '',
-  // [
+  // data : [
   // { 
   //   id: 1,
   //   userName:"Vishu",
   //   userEmail: 'vishusharmagit@gmail.com',
   //   messageContent: "Message From Server 1",
-  //   messageTime: new Date(),
+  //   messageTime: moment(),
   //   profileImageUrl:"http://vignette2.wikia.nocookie.net/althistory/images/a/a6/Venstre_(Denmark)_Logo.png/revision/latest?cb=20081224190313" 
   // },
   // { 
