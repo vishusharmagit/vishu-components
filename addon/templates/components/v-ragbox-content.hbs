@@ -1,0 +1,11 @@
+<span class="count_top"><i class="fa fa-user"></i>{{title}}</span>
+<div class="count">{{totalCount}}</div>
+<span class="count_bottom">
+	{{!-- {{#if (not-eq countDifference "no-change")}} --}}
+	{{#if footerContent}}
+		<i class="fa fa-sort-asc"></i>
+		<i class="green">{{countedFromCount}}% </i>{{countedFromMsg}}
+	{{else}}
+		<i>No Change</i>
+	{{/if}}
+</span>

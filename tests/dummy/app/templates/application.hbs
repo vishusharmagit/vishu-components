@@ -29,7 +29,47 @@
 
 <div class="col-md-3">
   <div style="background-color:lavender;">
-    <p> Dashboard Messages content <br></p>
+    <p> Dashboard Messages <br></p>
   </div>
   {{v-topbar-msg}}
+</div>
+
+
+<div class="col-md-3">
+  <div style="background-color:lavender;">
+    <p> Dashboard Ragbox Content Incresed<br></p>
+  </div>
+  {{v-ragbox-content
+    title="Users"
+    totalCount="1786"
+    countDifference="incresed"
+    countedFromMsg="From Last Month"
+    countedFromCount="11"
+  }}
+</div>
+
+<div class="col-md-3">
+  <div style="background-color:lavender;">
+    <p> Dashboard Ragbox Content Decreased<br></p>
+  </div>
+  {{v-ragbox-content
+    title="Users"
+    totalCount="1786"
+    countDifference="decreased"
+    countedFromMsg="From Last Week"
+    countedFromCount="11"
+  }}
+</div>
+
+<div class="col-md-3">
+  <div style="background-color:lavender;">
+    <p> Dashboard Ragbox Content No Chnage<br></p>
+  </div>
+  {{v-ragbox-content
+    title="Users"
+    totalCount="1786"
+    countDifference="no-change"
+    countedFromMsg=""
+    countedFromCount=""
+  }}
 </div>
