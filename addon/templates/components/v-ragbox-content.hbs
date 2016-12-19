@@ -3,8 +3,11 @@
 <span class="count_bottom">
 	{{!-- {{#if (not-eq countDifference "no-change")}} --}}
 	{{#if footerContent}}
-		<i class="fa fa-sort-asc"></i>
-		<i class="green">{{countedFromCount}}% </i>{{countedFromMsg}}
+		<i class={{countColor}}>
+			<i class="fa fa-sort-{{countSort}}"></i>
+			{{countedFromCount}}% 
+		</i>
+		{{countedFromMsg}}
 	{{else}}
 		<i>No Change</i>
 	{{/if}}
