@@ -14,6 +14,10 @@ module.exports = function(/* environment, appConfig */) {
       // For example, you may want dates to fallback on the localized shorthand format L by default.
 	  outputFormat: 'L', //Working
       allowEmpty: true // default: false//Working : It will not show 'Invalid date' for empty date.
+    },
+    agGrid: {
+      useEnterprise: false,
+      // licenseKey: 'YOUR_LICENSE_KEY'
     }
   };
 };
