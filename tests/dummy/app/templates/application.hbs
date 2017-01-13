@@ -1,4 +1,4 @@
-OM --}}
+{{!-- OM --}}
 <div class="container">
   <div class="navbar-header">
     {{!-- <a class="navbar-brand navbar-brand-custom" href="#">HARI OM</a> --}}
@@ -83,10 +83,29 @@ OM --}}
   {{v-ragbox}}
 </div>
 
+
+<div class="col-md-12">
+  <div style="background-color:lavender;">
+    <p> Dashboard GRID BASIC<br></p>
+  </div>
+  {{v-grid gridOptions=dummyGridOptions }}
+</div>
+
+
 <div class="col-md-12">
   <div style="background-color:lavender;">
     <p> Dashboard GRID<br></p>
   </div>
-  {{v-grid}}
+  {{input class="input-theme" placeholder="Filter..." key-up="filterChanged"}}
+
+  <p>Theme: <select class="ember-select" onchange={{action "selectTheme" value="target.value"}}>
+    <option value="ag-bootstrap">Bootstrap</option>
+    <option value="ag-fresh">Fresh</option>
+    <option value="ag-blue">Blue</option>
+    <option value="ag-dark">Dark</option>
+    <option value="ag-material">Material</option>
+    <option value="v-grid-theme" selected="selected">My - v-grid-theme </option>
+  </select></p>
+  {{v-grid gridOptions=dummyGridOptions theme=dummyTheme }}
 </div>
 
