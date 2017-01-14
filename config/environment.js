@@ -19,8 +19,10 @@ module.exports = function( /* environment, appConfig */ ) {
       useEnterprise: false,
       // licenseKey: 'YOUR_LICENSE_KEY'
     },
+    //Vishu : This one solve the problem to append values in css class.
+    //need to work on it. if user want to add the 'componentClassPrefix' value.
     // 'componentClassPrefix': componentClassPrefix
-    'componentClassPrefix': 'vishu-components'
+    // 'componentClassPrefix': 'vishu-components'
 
     // config: function() {
     //   return {
