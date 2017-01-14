@@ -37,9 +37,9 @@ module.exports = {
     } else {
         componentClassPrefix =  this.name;
     }
-    // var pkgPath = path.join(process.cwd(), 'package.json'),
-    //   pkg = JSON.parse(fs.readFileSync(pkgPath, { encoding: 'utf-8' })),
-    //   env = process.env.EMBER_ENV || 'development';
+    var pkgPath = path.join(process.cwd(), 'package.json'),
+      pkg = JSON.parse(fs.readFileSync(pkgPath, { encoding: 'utf-8' })),
+      env = process.env.EMBER_ENV || 'development';
     // if (env === 'production') {
     //   if (pkg.includeDevDepsAddonInProdBuild !== true) {
     //     return this._super.included(app);
