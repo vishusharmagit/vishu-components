@@ -27,15 +27,15 @@ module.exports = function(defaults) {
   //(PATH : /Users/vishu/Documents/Vishu/Vishu/dashboard/sl-ember-components-master/index.js)
 
   // app.import(app.bowerDirectory + '/bootstrap/dist/js/bootstrap.js');
-  app.import(app.bowerDirectory + '/bootstrap-datepicker/js/bootstrap-datepicker.js');
-  app.import(app.bowerDirectory + '/highcharts/highcharts.src.js');
-  app.import(app.bowerDirectory + '/jquery-mousewheel/jquery.mousewheel.js');
-  app.import(app.bowerDirectory + '/moment/min/moment-with-locales.js');
-  app.import(app.bowerDirectory + '/moment-timezone/builds/moment-timezone-with-data.js');
-  app.import(app.bowerDirectory + '/rxjs/dist/rx.all.js');
-  app.import(app.bowerDirectory + '/select2/select2.js');
-  app.import(app.bowerDirectory + '/typeahead.js/dist/typeahead.bundle.js');
-  app.import(app.bowerDirectory + '/jquery.fn.twbs-responsive-pagination/src/twbsResponsivePagination.js');
+  // app.import(app.bowerDirectory + '/bootstrap-datepicker/js/bootstrap-datepicker.js');
+  // app.import(app.bowerDirectory + '/highcharts/highcharts.src.js');
+  // app.import(app.bowerDirectory + '/jquery-mousewheel/jquery.mousewheel.js');
+  // app.import(app.bowerDirectory + '/moment/min/moment-with-locales.js');
+  // app.import(app.bowerDirectory + '/moment-timezone/builds/moment-timezone-with-data.js');
+  // app.import(app.bowerDirectory + '/rxjs/dist/rx.all.js');
+  // app.import(app.bowerDirectory + '/select2/select2.js');
+  // app.import(app.bowerDirectory + '/typeahead.js/dist/typeahead.bundle.js');
+  // app.import(app.bowerDirectory + '/jquery.fn.twbs-responsive-pagination/src/twbsResponsivePagination.js');
 
   return app.toTree();
 };
