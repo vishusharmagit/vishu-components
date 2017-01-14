@@ -29,7 +29,10 @@ module.exports = {
     }
   },
   included: function(app) {
-  	this._super.included( app );
+  	//TODO : VISHU
+  	//NEED TO MOVE IT @LINE- 65 AND, THEN TEST IN DASHBAORD BY REMOVING ADD DEPENDENCY FROM
+  	//'bower.json' we added.
+  	// this._super.included( app );
     var addonOptions = app.options[ 'vishu-components' ];
 
     if ( addonOptions && addonOptions.componentClassPrefix ) {
@@ -60,6 +63,6 @@ module.exports = {
     //     addon.included.apply(addon, [app]);
     //   }
     // });
-    // this._super.included(app);
+    this._super.included(app);
   }
 };
