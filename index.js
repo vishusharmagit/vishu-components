@@ -32,12 +32,34 @@ module.exports = {
   	//TODO : VISHU
   	//NEED TO MOVE IT @LINE- 65 AND, THEN TEST IN DASHBAORD BY REMOVING ADD DEPENDENCY FROM
   	//'bower.json' we added.
+  	//Tested not working.
   	// this._super.included( app );
+
+  	//Vishu : I think this one is giving name / appending 'vishu-components' to components.
+  	//Here, 'else' part setting 'componentClassPrefix' value from 'this.name'.
+  	//'this.name' have value 'vishu-components'. :) [Tested using console.]
+
+  	// Here, 'if' condition will work if any using 'app' want to change 'add-on' default name.
+  	//Like as below :
+  	
+  // 	To get started, you will need to add a config value to your ember-cli-build.js
+
+		// var app = new EmberApp(defaults, {
+		//     'sl-ember-components': {
+		//         componentClassPrefix: 'custom-prefix' // specify your custom prefix here
+		//     }
+		// });
+
+  	//
+  	// console.log("Vishu - addon");
+  	// console.log(app);
     var addonOptions = app.options[ 'vishu-components' ];
 
     if ( addonOptions && addonOptions.componentClassPrefix ) {
         componentClassPrefix = addonOptions.componentClassPrefix;
     } else {
+  			// console.log("Vishu - addon this.name");
+    		// console.log(this.name);
         componentClassPrefix =  this.name;
     }
     var pkgPath = path.join(process.cwd(), 'package.json'),

@@ -12,16 +12,184 @@
   </div>
   {{#v-panel title="Panel 1"}}
   An empty panel bar.
+  
   {{/v-panel}}
 </div>
 
+{{!-- v-buttons Implementation Start --}}
 <div class="col-md-12">
   <div style="background-color:lavender;">
     <p> v-button<br></p>
   </div>
- {{#v-button theme="success" }}Default Button{{/v-button}}
+ {{!-- {{#v-button theme="success" }}Default Button{{/v-button}} --}}
  {{!-- {{#v-button theme="success" disabled=true}}Default Button{{/v-button}} --}}
+  {{!-- <h3>Examples</h3> --}}
+
+  {{#v-panel title="v-buttons Implementation"}}
+  <hr>
+  <h3>Buttons Examples</h3>
+  <div class="row">
+      <div class="col-lg-6">
+          <h6>Template</h6>
+          <pre>\{{#v-button theme="default"}}Default Button\{{/v-button}}</pre>
+      </div>
+      <div class="col-lg-6">
+          <h6>Rendered Component</h6>
+          <div>{{#v-button theme="default"}}Default Button{{/v-button}}</div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-lg-6">
+          <h6>Template</h6>
+          <pre>\{{#v-button theme="primary"}}Primary Button\{{/v-button}}</pre>
+      </div>
+      <div class="col-lg-6">
+          <h6>Rendered Component</h6>
+          <div>{{#v-button theme="primary"}}Primary Button{{/v-button}}</div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-lg-6">
+          <h6>Template</h6>
+          <pre>\{{#v-button theme="info"}}Info Button\{{/v-button}}</pre>
+      </div>
+      <div class="col-lg-6">
+          <h6>Rendered Component</h6>
+          <div>{{#v-button theme="info"}}Info Button{{/v-button}}</div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-lg-6">
+          <h6>Template</h6>
+          <pre>\{{#v-button theme="success"}}Success Button\{{/v-button}}</pre>
+      </div>
+      <div class="col-lg-6">
+          <h6>Rendered Component</h6>
+          <div>{{#v-button theme="success"}}Success Button{{/v-button}}</div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-lg-6">
+          <h6>Template</h6>
+          <pre>\{{#v-button theme="warning"}}Warning Button\{{/v-button}}</pre>
+      </div>
+      <div class="col-lg-6">
+          <h6>Rendered Component</h6>
+          <div>{{#v-button theme="warning"}}Warning Button{{/v-button}}</div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-lg-6">
+          <h6>Template</h6>
+          <pre>\{{#v-button theme="danger"}}Danger Button\{{/v-button}}</pre>
+      </div>
+      <div class="col-lg-6">
+          <h6>Rendered Component</h6>
+          <div>{{#v-button theme="danger"}}Danger Button{{/v-button}}</div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-lg-6">
+          <h6>Template</h6>
+          <pre>\{{#v-button disabled=true}}Disabled Button\{{/v-button}}</pre>
+      </div>
+      <div class="col-lg-6">
+          <h6>Rendered Component</h6>
+          <div>{{#v-button disabled=true}}Disabled Button{{/v-button}}</div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-lg-6">
+          <h6>Template</h6>
+          <pre>\{{#v-button theme="hover"}}Hover Button\{{/v-button}}</pre>
+      </div>
+      <div class="col-lg-6">
+          <h6>Rendered Component</h6>
+          <div>{{#v-button theme="hover"}}Hover Button{{/v-button}}</div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-lg-6">
+          <h6>Template</h6>
+          <pre>\{{#v-button theme="link"}}Link Button\{{/v-button}}</pre>
+      </div>
+      <div class="col-lg-6">
+          <h6>Rendered Component</h6>
+          <div>{{#v-button theme="link"}}Link Button{{/v-button}}</div>
+      </div>
+  </div>
+  <hr>
+
+  {{/v-panel}}
 </div>
+{{!-- v-buttons Implementation End --}}
+
+
+{{!-- v-alert Implementation Start --}}
+<div class="col-md-12">
+  <div style="background-color:lavender;">
+    <p> v-alert<br></p>
+  </div>
+  {{#v-panel title="v-alert Implementation"}}
+    <h3>Alert Examples</h3>
+    <hr>
+    <div class="row">
+      <div class="col-lg-6">
+          <h6>Template</h6>
+          <pre>\{{#v-alert dismissable=true theme="info"}} Dismissable info alert \{{/v-alert}}</pre>
+      </div>
+      <div class="col-lg-6">
+          <h6>Rendered Component</h6>
+          {{#v-alert dismissable=true theme="info"}}
+              Dismissable info alert
+          {{/v-alert}}
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <h6>Template</h6>
+            <pre>\{{#v-alert theme="success"}}  Success alert  \{{/v-alert}}</pre>
+        </div>
+        <div class="col-lg-6">
+            <h6>Rendered Component</h6>
+            {{#v-alert theme="success"}}Success alert{{/v-alert}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <h6>Template</h6>
+            <pre>\{{#v-alert theme="warning"}}  Warning alert \{{/v-alert}}</pre>
+        </div>
+        <div class="col-lg-6">
+            <h6>Rendered Component</h6>
+            {{#v-alert theme="warning"}}Warning alert{{/v-alert}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <h6>Template</h6>
+            <pre>\{{#v-alert theme="danger"}}  Danger alert \{{/v-alert}}</pre>
+        </div>
+        <div class="col-lg-6">
+            <h6>Rendered Component</h6>
+            {{#v-alert theme="danger"}}Danger alert{{/v-alert}}
+        </div>
+    </div>
+    <hr>
+  {{/v-panel}}
+</div>
+{{!-- v-alert Implementation End --}}
 
 
 <div class="col-md-3">

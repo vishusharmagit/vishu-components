@@ -1,31 +1,168 @@
 @import './v-panel';
 @import './v-grid';
-
 .clickable {
-	cursor: pointer;
+    cursor: pointer;
 }
 
+// -------------------------------------------------------------------------
+// Icons
+/*.sl-ember-components-icons {*/
+.vishu-components-icons {
+    width: 1.4em;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .65em;
+    &::before,
+    &::after {
+        font-family: "Glyphicons Halflings";
+        font-style: normal;
+        font-weight: normal;
+        speak: none;
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        text-decoration: inherit;
+        width: 1em;
+        text-align: center;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1em;
+        margin-right: .2em;
+        margin-left: .2em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    &::before {
+        margin-right: 1.2em;
+    }
+}
+/*
+// -------------------------------------------------------------------------
+// Loading States
+.sl-loading {
+    position: relative;
+    overflow: hidden;
+    &:before,
+    &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+    &:before {
+        background-color: fade(@gray-dark, 75%);
+    }
+    &:after {
+        -webkit-animation: sl-spin 1s infinite linear;
+        -moz-animation: sl-spin 1s infinite linear;
+        -o-animation: sl-spin 1s infinite linear;
+        animation: sl-spin 1s infinite linear;
+        background-image: url('@{loading-spinner-light}');
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: contain;
+    }
+    &.inverse:before {
+        background-color: fade(@gray-lighter, 75%);
+    }
+    &.inverse:after {
+        background-image: url('@{loading-spinner-dark}');
+    }
+    & > * {
+        -webkit-filter: blur(4px);
+        -moz-filter: blur(4px);
+        -o-filter: blur(4px);
+        -ms-filter: blur(4px);
+        filter: blur(4px);
+    }
+}
+
+span.sl-loading {
+    display: inline-block;
+    min-height: @line-height-computed;
+    min-width: @line-height-computed;
+    vertical-align: bottom;
+    &:before {
+        display: none;
+    }
+    &:after {
+        background-size: 160%;
+        background-image: url('@{loading-spinner-dark}');
+    }
+    &.inverse:after {
+        background-image: url('@{loading-spinner-light}');
+    }
+}
+
+// -------------------------------------------------------------------------
+// Animations
+@-moz-keyframes sl-spin {
+    0% {
+        -moz-transform: translate3d(0, 0, 0) rotate(-0.001deg);
+    }
+    100% {
+        -moz-transform: translate3d(0, 0, 0) rotate(358.999deg);
+    }
+}
+
+@-webkit-keyframes sl-spin {
+    0% {
+        padding-top: 2px;
+        -webkit-transform: rotate3d(0, 0, 1, 0.001deg);
+    }
+    100% {
+        padding-top: 2px;
+        -webkit-transform: rotate3d(0, 0, 1, 360.001deg);
+    }
+}
+
+@-o-keyframes sl-spin {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(359deg);
+    }
+}
+
+@keyframes sl-spin {
+    0% {
+        transform: translate3d(0, 0, 0) rotate(-0.001deg);
+    }
+    100% {
+        transform: translate3d(0, 0, 0) rotate(360.001deg);
+    }
+}*/
 
 // -------------------------------------------------------------------------
 // Twitter Bootstrap
 
 /*@import 'bower_components/bootstrap/less/bootstrap';*/
+
 @import 'bower_components/bootstrap/dist/css/bootstrap.css';
-
-
-
 // -------------------------------------------------------------------------
 // Twitter Bootstrap customization
 
 /*@import 'variables.less';*/
+
+
 /*@import 'variables.scss';*/
+
 @import './variable';
-
-
 // -------------------------------------------------------------------------
 // Bootstrap Datepicker
 
 /*@import 'bower_components/bootstrap-datepicker/less/datepicker3';*/
-@import 'bower_components/bootstrap-datepicker/css/datepicker3';
 
+@import 'bower_components/bootstrap-datepicker/css/datepicker3';
+@import './mixins';
 @import './v-buttons';
+@import './v-alert';

@@ -1,0 +1,7 @@
+{{#if dismissable}}
+    <button {{action "dismiss"}} class="pull-right close" data-dismiss="alert" aria-label="Close" type="button">
+        <span class="v-alert-icon-close">Close</span>
+    </button>
+{{/if}}
+
+{{yield}}

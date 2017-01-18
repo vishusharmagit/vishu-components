@@ -1,0 +1,12 @@
+.#{$component-class-prefix}-alert {
+    /*.CloseButtons( $icon-alert-close );*/
+    @include CloseButtons( $icon-alert-close );
+}
+
+/*.sl-icon-close {*/
+.v-alert-icon-close {
+    /*&:extend( .sl-ember-components-icons all );*/
+    /*&:extend( .vishu-components-icons all );*/
+    /*https://css-tricks.com/the-extend-concept/*/
+    @extend .vishu-components-icons;
+}

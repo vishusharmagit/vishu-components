@@ -1,0 +1,41 @@
+/*.CloseButtons( @icon ) {
+    button.close {
+        font-size: 1.4em;
+
+        .sl-icon-close::before {
+            content: @icon;
+        }
+    }
+}*/
+
+
+/*/ FUnctions/*/
+
+
+/*@function CloseButtons($icon){
+  @return button.close {
+	        font-size: 1.
+	        .v-icon-close::before {
+	            content: $icon;
+	        }
+	    }
+}*/
+
+/*Helpful URL*/
+/*
+https://www.google.com.sg/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=less+function+example
+https://codemyviews.com/blog/10-less-css-examples-you-should-steal-for-your-projects
+https://www.google.com.sg/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=sass%20functions%20example
+http://thesassway.com/advanced/pure-sass-functions*/
+
+
+/*// Mixins*/
+
+@mixin CloseButtons($icon) {
+    button.close {
+        font-size: 1.4em;
+        .v-alert-icon-close::before {
+            content: $icon;
+        }
+    }
+}

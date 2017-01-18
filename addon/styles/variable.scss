@@ -5,9 +5,12 @@ $component-class-prefix: vishu-components;
 
 /*Vishu : We will later find where to add these images.*/
 /*@icon-font-path: "../sl-ember-components/assets/fonts/";*/
+@icon-font-path: "../vishu-components/assets/fonts/";
 
 /*@loading-spinner-light: "/sl-ember-components/assets/images/spinner-light-sm.png";*/
 /*@loading-spinner-dark: "/sl-ember-components/assets/images/spinner-dark-sm.png";*/
+@loading-spinner-light: "/vishu-components/assets/images/spinner-light-sm.png";
+@loading-spinner-dark: "/vishu-components/assets/images/spinner-dark-sm.png";
 
 // -------------------------------------------------------------------------
 // icons (generic)
