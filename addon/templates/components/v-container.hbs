@@ -1,0 +1,11 @@
+{{#if heading}}
+    <div class="panel-heading">{{heading}}</div>
+{{/if}}
+
+<div class="panel-body {{if loading "v-loading"}}">
+    {{yield}}
+</div>
+
+{{#if footer}}
+    <div class="panel-footer">{{footer}}</div>
+{{/if}}

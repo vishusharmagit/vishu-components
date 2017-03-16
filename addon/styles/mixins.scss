@@ -34,7 +34,11 @@ http://thesassway.com/advanced/pure-sass-functions*/
 @mixin CloseButtons($icon) {
     button.close {
         font-size: 1.4em;
-        .v-alert-icon-close::before {
+        /*.v-alert-icon-close::before {
+            content: $icon;
+        }*/
+        /*Changed for make it common*/
+        .v-icon-close::before {
             content: $icon;
         }
     }

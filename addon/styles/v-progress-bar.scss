@@ -1,0 +1,30 @@
+/* Vishu :
+It using mainly less from 'bower_components/bootstrap/less/bootstrap'.
+
+I am planning to replace value from following file :
+File : https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+
+File : https://gist.github.com/garyharan/957284
+
+Another files
+File : https://github.com/twbs/bootstrap-rubygem/blob/master/assets/stylesheets/bootstrap/mixins/_forms.scss
+File : https://github.com/twbs/bootstrap-rubygem/blob/master/assets/stylesheets/bootstrap/_variables.scss;
+
+*/
+
+
+$text-color:         #333 ;
+$padding-base-vertical:     6px ;
+
+.#{$component-class-prefix}-progress-bar{
+    span {
+        /*padding: 0 @padding-base-vertical;*/
+        padding: 0 $padding-base-vertical;
+    }
+}
+
+.sl-progress-bar-low-percentage span {
+    /*color: @text-color;*/
+    color: $text-color;
+    margin-left: 100%;
+}

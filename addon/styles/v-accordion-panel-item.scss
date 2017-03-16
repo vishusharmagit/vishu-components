@@ -1,0 +1,12 @@
+.#{$component-class-prefix}-accordion-panel-item{
+    /*border : 11px solid red;*/
+    margin-bottom: 2px; /*Vishu : added to redue bottom margin default property of panel;*/
+    .v-accordion-panel-item-body {
+    	transition: max-height 400ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+	    overflow: hidden;
+	    &.v-accordion-panel-item-collapsed {
+        transition: max-height 200ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+        max-height: 0;
+	    }
+		}
+}

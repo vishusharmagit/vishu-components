@@ -1,6 +1,152 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+
+  //Components properties Start
+  
+  //Vishu  : For 'v-input' data
+  colors: [
+    { id: 'Black' },
+    { id: 'Blue' },
+    { id: 'Gray' },
+    { id: 'Green' },
+    { id: 'Orange' },
+    { id: 'Purple' },
+    { id: 'Red' },
+    { id: 'White' },
+    { id: 'Yellow' }
+  ],
+
+  names: [
+    "Vishu",
+    "Sharma",
+    "Varun"
+  ],
+  //Vishu  : For 'v-input' data
+  //Vishu  : For 'v-radio-group' data
+  currentColor: 'blue',
+  //Vishu  : For 'v-radio-group' data
+
+  //Vishu  : For 'v-span' data
+  isLoading: true,
+  initialize: Ember.on(
+    'init',
+    function() {
+      setTimeout( () => {
+          this.set( 'isLoading', false );
+      }, 5000 );
+    }
+  ),
+  //Vishu  : For 'v-span' data
+
+  //Vishu  : For 'v-select' data
+  numbers: [ 10, 20, 30, 40, 50, 60, 70, 80, 90 ],
+  selectColors: Ember.A([
+            {
+                label: 'Red',
+                description: 'Apples',
+                value: 'red'
+            },
+            {
+                label: 'Orange',
+                description: 'Oranges',
+                value: 'orange'
+            },
+            {
+                label: 'Yellow',
+                description: 'Bananas',
+                value: 'yellow'
+            },
+            {
+                label: 'Green',
+                description: 'Avocados',
+                value: 'green'
+            },
+            {
+                label: 'Purple',
+                description: 'Blueberries',
+                value: 'purple'
+            },
+            {
+                label: 'Splorge',
+                description: '???',
+                value: 'splorge'
+            }
+        ]),
+  //Vishu  : For 'v-select' data
+
+  //Vishu  : For 'v-progress-bar' data
+  dynamicValue: 21,
+  //Vishu  : For 'v-progress-bar' data
+
+
+  //Vishu  : For 'v-accordion-panel' data
+  basicSelectedPanel: 'Panel B',
+  basicAccordionPanels : Ember.A([{
+      title : 'Panel A',
+      content:'Panel A Content'
+  }, {
+       title : 'Panel B',
+      content:'Panel B Content'
+  }, {
+       title : 'Panel C',
+      content:'Panel C Content'
+  }]),
+
+  selectedPanel: 'Panel 1',
+  accordionPanels : Ember.A([{
+      title : 'Panel 1',
+      content:'Panel 1 Content',
+      theme: 'primary'
+  }, {
+      title : 'Panel 2',
+      content: 'Panel 2 Content',
+      theme: 'success'
+  }, {
+      title : 'Panel 3',
+      content: 'Panel 3 Content',
+      theme: 'warning'
+  }, {
+      title : 'Panel 4',
+      content:'Panel 4 Content',
+      theme: 'info'
+  }, {
+      title : 'Panel 5',
+      content: 'Panel 5 Content',
+      theme: 'danger'
+  }]),
+
+  selectedPanel2: 'Panel 2.2',
+  accordionPanels2 : Ember.A([{
+      title : 'Panel 2.1',
+      content:'Panel 2.1 Content',
+      theme: 'primary'
+  }, {
+      title : 'Panel 2.2',
+      content:'Panel 2.2 Content',
+      theme: 'success'
+  }, {
+      title : 'Panel 2.3',
+      content:'Panel 2.3 Content',
+      theme: 'warning'
+  }, {
+      title : 'Panel 2.4',
+      content:'Panel 2.4 Content',
+      theme: 'info'
+  }, {
+      title : 'Panel 2.5',
+      content:'Panel 2.5 Content',
+      theme: 'danger'
+  }]),
+  //Vishu  : For 'v-accordion-panel' data
+
+
+
+
+
+  //Components properties End
+
+
   dummyTheme: 'v-grid-theme',
   dummyGridOptions: {
 
@@ -151,13 +297,27 @@ export default Ember.Controller.extend({
     }],
     // showToolPanel: true //Vishu : We are getting warning for it. It is available only in Paid Version.
   },
+  
+
+
   actions: {
     filterChanged(value) {
       //this.get('categories').api.setQuickFilter(value);
     },
     selectTheme(theme) {
       this.set('dummyTheme', theme);
-    }
+    },
+
+  //Vishu  : For 'v-accordion-panel' data
+    accordionPanelClickTest(e) {
+      //Here, 'e' will be panel title.
+      //this.sendAction('action', e);
+      Ember.Logger.log("Application Test --> e");
+      Ember.Logger.log(e);
+      
+    },
+  //Vishu  : For 'v-accordion-panel' data
+
   }
 
 });

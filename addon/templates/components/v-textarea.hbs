@@ -1,0 +1,37 @@
+{{#if label}}
+    <label for={{inputId}} class="control-label">
+        {{label}}
+
+        {{#if optional}}
+            <small class="text-info">Optional</small>
+        {{/if}}
+
+        {{#if required}}
+            <small class="text-danger">Required</small>
+        {{/if}}
+    </label>
+{{/if}}
+
+{{textarea
+    id=inputId
+    autofocus=autofocus
+    class="form-control"
+    cols=cols
+    disabled=disabled
+    maxlength=maxlength
+    name=name
+    placeholder=placeholder
+    readonly=readonlyString
+    rows=rows
+    selectionDirection=selectionDirection
+    selectionEnd=selectionEnd
+    selectionStart=selectionStart
+    spellcheck=spellcheck
+    tabindex=tabindex
+    value=value
+    wrap=wrap
+}}
+
+{{#if helpText}}
+    <p class="help-block">{{helpText}}</p>
+{{/if}}

@@ -1,0 +1,27 @@
+{{#if data}}
+	{{#each data  as |item index|}}
+	  {{#if theme}}
+	  	{{#v-accordion-panel-item 
+		  	title=item.title 
+		  	selected=selected
+		  	theme=theme 
+		  	action="accordionPanelClick"
+		  }}
+	 			<p> {{item.content}} </p>
+	  	{{/v-accordion-panel-item}}
+	  {{else}}
+	  	{{#v-accordion-panel-item 
+		  	title=item.title 
+		  	selected=selected
+		  	theme=item.theme 
+		  	action="accordionPanelClick"
+		  }}
+		 		<p> {{item.content}} </p>
+		  {{/v-accordion-panel-item}}
+	  {{/if}}
+	{{/each}}
+{{else}}
+	{{yield}}
+{{/if}}
+
+  

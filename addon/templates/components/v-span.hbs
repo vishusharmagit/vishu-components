@@ -1,0 +1,8 @@
+{{#unless loading}}
+    {{#if value}}
+        {{yield}}
+        {{value}}
+    {{else}}
+        {{yield}}
+    {{/if}}
+{{/unless}}

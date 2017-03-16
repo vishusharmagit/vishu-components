@@ -1,0 +1,15 @@
+.#{$component-class-prefix}-modal{
+    /*.CloseButtons( @icon-modal-close );*/
+    @include CloseButtons( $icon-alert-close );
+
+}
+
+/*.sl-icon-close {*/
+/*.v-modal-win-icon-close {*/
+/*Changed for make it common*/
+
+.v-icon-close {
+    /*&:extend( .sl-ember-components-icons all );*/
+    @extend .vishu-components-icons;
+}
+

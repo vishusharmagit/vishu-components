@@ -1,0 +1,52 @@
+/* Vishu :
+It using mainly less from 'bower_components/bootstrap/less/bootstrap'.
+
+I am planning to replace value from following file :
+File : https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+
+
+*/
+.twitter-typeahead {
+  display: block !important;
+  .tt-hint {
+    /*color: $gray;*/
+    color: #555;
+  }
+  .tt-menu {
+    /*background: $input-bg;*/
+    /*background: #fff !default;*/
+    background: #fff;
+    /*border: 1px solid $brand-primary;*/
+    border: 1px solid #337ab7;
+    /*border-top-color: $input-border;*/
+    border-top-color: #ccc;
+    margin-top: -1px;
+    width: 100%;
+    .tt-suggestion {
+      /*color: $gray;*/
+      color: #555;
+      cursor: pointer;
+      /*padding: $padding-base-vertical $padding-base-horizontal;*/
+      padding: 6px 12px;
+      &:hover,
+      &.tt-cursor {
+        /*color: $input-bg;*/
+        color: #fff;
+        /*background: $brand-primary;*/
+        background: #337ab7;
+        p strong {
+          /*color: $input-bg;*/
+          color: #fff;
+        }
+      }
+      p {
+        margin: 0;
+        strong {
+          /*color: $gray-dark;*/
+          color: #222;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
