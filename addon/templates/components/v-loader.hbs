@@ -1,0 +1,22 @@
+{{#ember-wormhole to="loading-indicator"}}
+	{{#if shieldIcon}}
+  	<div class="v-loading-indicator-wrapper">
+  		<div class="loading-spinner-modal"></div>
+  		<div class="shield-spinner-wrapper">
+  			<div class="shield-spinner-circle">
+  				<div class="shield-spinner"></div>
+  				<i class="shield-icon rdc-glyphicon icon-lock-5"></i>
+  				<p class="v-loading-indicator___message">{{loadingText}}</p>
+  			</div>
+  		</div>
+  	</div>
+  	{{else}}
+  	<div class="v-loading-indicator-wrapper">
+  		<div class="loading-spinner-modal"></div>
+  		<div class="v-loading-indicator">
+  			<span class="v-loading-indicator___spinner"></span>
+  			<p class="v-loading-indicator___message">{{loadingText}}</p>
+  		</div>
+  	</div>
+	{{/if}}
+{{/ember-wormhole}}
